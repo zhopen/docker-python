@@ -18,4 +18,4 @@ RUN ./configure --enable-optimizations && make altinstall
 RUN rm -R /usr/src/python/
 WORKDIR /
 
-CMD ["echo", "Entrypoint is undefined! Use this image as base for other Docker images..."]
+CMD ["/bin/echo", "Entrypoint is undefined! Use this image as base for other Docker images..."]
